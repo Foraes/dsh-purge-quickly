@@ -80,6 +80,9 @@ npm test    # 161 项断言，覆盖 Host 路由、Client 组件、设置页 CRU
 
 测试用 mock 宿主驱动，不需要启动 DSH。
 
+改代码前建议先读 [IMPLEMENTATION.md](IMPLEMENTATION.md)：里面写了为什么是「每会话一次锁定」而不是「随时切换」、槽位怎么选、字号为什么用主题变量、以及踩过的坑。
+
 ## License
 
 MIT
+
