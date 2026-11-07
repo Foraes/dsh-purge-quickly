@@ -1,0 +1,8 @@
+# dsh-purge-quickly bundle patch
+#
+# One row for the plugin. The Host half registers the HTTP routes and the
+# per-session prompt rewrite; the Client half (`dsh.client` in package.json)
+# adds the composer switch, the header badge and the settings page.
+- insert:
+    - id: purge-quickly
+      name: dsh-purge-quickly

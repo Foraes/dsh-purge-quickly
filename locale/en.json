@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Prompt mode",
+    "description": "Pick a normal or override persona before a conversation starts. The choice locks once the session begins, so the system prompt never changes and prefix caching stays intact."
+  }
+}

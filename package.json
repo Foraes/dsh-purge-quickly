@@ -1,0 +1,40 @@
+{
+  "name": "dsh-purge-quickly",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Per-session persona switch for DSH: pick normal or an override persona before a conversation starts. The choice locks once the session begins, so the system prompt never changes and prefix caching stays intact.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "persona",
+    "system-prompt",
+    "prompt-cache"
+  ],
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  },
+  "scripts": {
+    "test": "node test-step1.mjs && node test-step2.mjs && node test-step3.mjs && node test-order.mjs"
+  }
+}

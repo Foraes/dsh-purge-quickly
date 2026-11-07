@@ -1,0 +1,15 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+_*.png
+_*.svg
+
+# 嵌入用的中间产物，运行时不引用
+_settings_embed.js
+settings.source.js
+
+# 本地重命名/提取脚本
+_rename.cjs
+extract*.cjs
+scan*.cjs
